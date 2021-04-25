@@ -121,7 +121,8 @@ extension MapViewController {
     }
     
     @IBAction func requestRouteButtonAction(_ sender: Any) {
-        
+        guard let delegate = delegate else { return }
+        delegate.didTapRequestRoute()
     }
     
     @IBAction func suggestRouteButtonAction(_ sender: Any) {

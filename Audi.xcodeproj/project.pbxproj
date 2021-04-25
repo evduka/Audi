@@ -62,6 +62,9 @@
 		A27FF3F426345AB50052C921 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3F326345AB50052C921 /* ConstraintView.swift */; };
 		A28029E6263468A000DB01F9 /* iConstraintInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029E5263468A000DB01F9 /* iConstraintInteractor.swift */; };
 		A28029EB263468AC00DB01F9 /* ConstraintInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029EA263468AC00DB01F9 /* ConstraintInteractor.swift */; };
+		A28029F72635A20700DB01F9 /* iRequestCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029F62635A20700DB01F9 /* iRequestCarView.swift */; };
+		A28029FC2635A22800DB01F9 /* RequestCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029FB2635A22800DB01F9 /* RequestCarViewController.swift */; };
+		A2802A012635A24C00DB01F9 /* RequestCarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2802A002635A24C00DB01F9 /* RequestCarViewController.storyboard */; };
 		DCDD7CC336D7B0D487CF11CF /* Pods_Audi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC255776C1155EDA8923771 /* Pods_Audi.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,6 +153,9 @@
 		A27FF3F326345AB50052C921 /* ConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
 		A28029E5263468A000DB01F9 /* iConstraintInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iConstraintInteractor.swift; sourceTree = "<group>"; };
 		A28029EA263468AC00DB01F9 /* ConstraintInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInteractor.swift; sourceTree = "<group>"; };
+		A28029F62635A20700DB01F9 /* iRequestCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRequestCarView.swift; sourceTree = "<group>"; };
+		A28029FB2635A22800DB01F9 /* RequestCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCarViewController.swift; sourceTree = "<group>"; };
+		A2802A002635A24C00DB01F9 /* RequestCarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestCarViewController.storyboard; sourceTree = "<group>"; };
 		F05FE6AFF698104B04A2C3A4 /* Pods-AudiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiTests.debug.xcconfig"; path = "Target Support Files/Pods-AudiTests/Pods-AudiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -309,9 +315,10 @@
 			isa = PBXGroup;
 			children = (
 				A271BF13262203D700F680EA /* Global */,
-				A27FF3ED26345A670052C921 /* ConstraintModule */,
 				A271BEE02621C0D700F680EA /* MapModule */,
 				A271C059262E074800F680EA /* SearchModule */,
+				A27FF3ED26345A670052C921 /* ConstraintModule */,
+				A2802A062635A26700DB01F9 /* RequestCarModule */,
 				A271BE982621BF8900F680EA /* AppDelegate.swift */,
 				A271BE9A2621BF8900F680EA /* SceneDelegate.swift */,
 				A271BEA12621BFA300F680EA /* Assets.xcassets */,
@@ -567,6 +574,24 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A2802A052635A25A00DB01F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A28029F62635A20700DB01F9 /* iRequestCarView.swift */,
+				A28029FB2635A22800DB01F9 /* RequestCarViewController.swift */,
+				A2802A002635A24C00DB01F9 /* RequestCarViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2802A062635A26700DB01F9 /* RequestCarModule */ = {
+			isa = PBXGroup;
+			children = (
+				A2802A052635A25A00DB01F9 /* View */,
+			);
+			path = RequestCarModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -678,6 +703,7 @@
 				A271BEA52621BFA300F680EA /* LaunchScreen.storyboard in Resources */,
 				A271BEA22621BFA300F680EA /* Assets.xcassets in Resources */,
 				A271BEF72621C23300F680EA /* MapViewController.storyboard in Resources */,
+				A2802A012635A24C00DB01F9 /* RequestCarViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -815,6 +841,7 @@
 				A206ADF52630561C00CD495B /* SearchFooterView.swift in Sources */,
 				A28029EB263468AC00DB01F9 /* ConstraintInteractor.swift in Sources */,
 				A271BF5F2624380E00F680EA /* iMapService.swift in Sources */,
+				A28029FC2635A22800DB01F9 /* RequestCarViewController.swift in Sources */,
 				A206ADED2630560000CD495B /* iSearchFooterView.swift in Sources */,
 				A27FF3F426345AB50052C921 /* ConstraintView.swift in Sources */,
 				A28029E6263468A000DB01F9 /* iConstraintInteractor.swift in Sources */,
@@ -842,6 +869,7 @@
 				A271BF182622082200F680EA /* UIViewController.swift in Sources */,
 				A206ADDD262F504E00CD495B /* Place.swift in Sources */,
 				A206ADC1262F407300CD495B /* iSearchInteractor.swift in Sources */,
+				A28029F72635A20700DB01F9 /* iRequestCarView.swift in Sources */,
 				A271BED72621C07700F680EA /* MapPresenter.swift in Sources */,
 				A271BF432624339500F680EA /* iMapInteractor.swift in Sources */,
 				A24D381826305B5A004A7E7A /* iSearchFooterPresenter.swift in Sources */,

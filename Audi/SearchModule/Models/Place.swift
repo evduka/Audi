@@ -34,7 +34,6 @@ class Place: NSObject {
         self.formatted_address = address.name
         let location = Location(dictionary: ["lat": address.location.coordinate.latitude, "lng": address.location.coordinate.latitude])
         self.geometry = Geometry(dictionary: ["location": location])
-        print(name)
         self.name = address.name
     }
     

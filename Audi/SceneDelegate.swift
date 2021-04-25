@@ -19,33 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: scene)
         
-        let mapView = MapViewController.initFromStoryboardWithTheSameName()
-        let headerView = SearchHeaderView()
-        let footerView = SearchFooterView()
-        let constraintView = ConstraintView()
-        
-        let interactor = MapInteractor()
-        let searchInteractor = SearchInteractor()
-        let searchFooterInteractor = SearchFooterInteractor()
-        let constraintInteractor = ConstraintInteractor()
-        
-        let searchHeaderPresenter = SearchHeaderPresenter(headerView: headerView, interactor: searchInteractor)
-        let searchFooterPresenter = SearchFooterPresenter(footerView: footerView, interactor: searchFooterInteractor)
-        let constraintPresenter = ConstraintPresenter(view: constraintView, interactor: constraintInteractor)
-        let mapPresenter = MapPresenter(mapView: mapView, searchHeaderView: headerView, searchFooterView: footerView, constraintView: constraintView, interactor: interactor)
-        
-        AppManager.main.mapPresenter = mapPresenter
-        AppManager.main.searchHeaderPresenter = searchHeaderPresenter
-        AppManager.main.searchFooterPresenter = searchFooterPresenter
-        AppManager.main.constraintPresenter = constraintPresenter
-        
-        AppManager.main.create_kvo_SearchHeaderPresenter_places()
-        AppManager.main.create_kvo_SearchHeaderPresenter_originPlace()
-        AppManager.main.create_kvo_SearchHeaderPresenter_destinationPlace()
-        AppManager.main.create_kvo_SearchFooterPresenter_selectedPlace()
-        AppManager.main.create_kvo_constraintPresenter_counter()
-        
-        window?.rootViewController = mapView
+        window?.rootViewController = AppManager.main.buildMapViewController()
         window?.makeKeyAndVisible()
         
     }

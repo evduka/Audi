@@ -31,5 +31,6 @@ protocol iMapViewDelegate: AnyObject {
     func didTapDestinationAddress()
     func didTapBack()
     func didTapCancel()
+    func didTapRequestRoute()
 }
 

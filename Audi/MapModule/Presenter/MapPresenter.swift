@@ -157,6 +157,10 @@ extension MapPresenter: iMapViewDelegate {
         state = .noRoute
     }
     
+    func didTapRequestRoute() {
+        
+    }
+    
 }
 
 //MARK: - iMapInteractorDelegate
