@@ -1,0 +1,1188 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48F3A6EB24FB7C72BA58A058 /* Pods_Audi_AudiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93478D9150408993790E8F55 /* Pods_Audi_AudiUITests.framework */; };
+		54B8277C0A356E3B55EF4024 /* Pods_AudiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EB45B87E0660E00D63E895 /* Pods_AudiTests.framework */; };
+		A206ADB9262F404900CD495B /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADB8262F404900CD495B /* SearchInteractor.swift */; };
+		A206ADC1262F407300CD495B /* iSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADC0262F407300CD495B /* iSearchInteractor.swift */; };
+		A206ADCA262F438300CD495B /* iPlaceHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADC9262F438300CD495B /* iPlaceHttpService.swift */; };
+		A206ADD2262F43C300CD495B /* PlaceHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADD1262F43C300CD495B /* PlaceHttpService.swift */; };
+		A206ADDD262F504E00CD495B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADDC262F504E00CD495B /* Place.swift */; };
+		A206ADED2630560000CD495B /* iSearchFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADEC2630560000CD495B /* iSearchFooterView.swift */; };
+		A206ADF52630561C00CD495B /* SearchFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADF42630561C00CD495B /* SearchFooterView.swift */; };
+		A24D381826305B5A004A7E7A /* iSearchFooterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24D381726305B5A004A7E7A /* iSearchFooterPresenter.swift */; };
+		A24D381E26305B91004A7E7A /* SearchFooterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24D381D26305B91004A7E7A /* SearchFooterPresenter.swift */; };
+		A271BE992621BF8900F680EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BE982621BF8900F680EA /* AppDelegate.swift */; };
+		A271BE9B2621BF8900F680EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BE9A2621BF8900F680EA /* SceneDelegate.swift */; };
+		A271BEA22621BFA300F680EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A271BEA12621BFA300F680EA /* Assets.xcassets */; };
+		A271BEA52621BFA300F680EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A271BEA32621BFA300F680EA /* LaunchScreen.storyboard */; };
+		A271BEB02621BFA300F680EA /* AudiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BEAF2621BFA300F680EA /* AudiTests.swift */; };
+		A271BEBB2621BFA300F680EA /* AudiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BEBA2621BFA300F680EA /* AudiUITests.swift */; };
+		A271BECF2621C06500F680EA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BECE2621C06500F680EA /* MapViewController.swift */; };
+		A271BED72621C07700F680EA /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BED62621C07700F680EA /* MapPresenter.swift */; };
+		A271BEE32621C10A00F680EA /* iMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BEE22621C10A00F680EA /* iMapView.swift */; };
+		A271BEF22621C15100F680EA /* iMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BEF12621C15100F680EA /* iMapPresenter.swift */; };
+		A271BEF72621C23300F680EA /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A271BEF62621C23300F680EA /* MapViewController.storyboard */; };
+		A271BF062622039D00F680EA /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF052622039D00F680EA /* Keys.swift */; };
+		A271BF182622082200F680EA /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF172622082100F680EA /* UIViewController.swift */; };
+		A271BF2B2624329200F680EA /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF2A2624329200F680EA /* MapInteractor.swift */; };
+		A271BF3A2624331700F680EA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF392624331700F680EA /* LocationService.swift */; };
+		A271BF432624339500F680EA /* iMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF422624339500F680EA /* iMapInteractor.swift */; };
+		A271BF51262433CF00F680EA /* iLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF50262433CF00F680EA /* iLocationService.swift */; };
+		A271BF5F2624380E00F680EA /* iMapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF5E2624380E00F680EA /* iMapService.swift */; };
+		A271BF642624381B00F680EA /* MapService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF632624381B00F680EA /* MapService.swift */; };
+		A271BF8826259F0500F680EA /* iHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF8726259F0500F680EA /* iHttpService.swift */; };
+		A271BF942625A00E00F680EA /* iDerictionHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF932625A00E00F680EA /* iDerictionHttpService.swift */; };
+		A271BF9E2625A05400F680EA /* DirestionHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BF9D2625A05400F680EA /* DirestionHttpService.swift */; };
+		A271BFBA2625CA1600F680EA /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BFB92625CA1600F680EA /* Route.swift */; };
+		A271BFC32625CB4400F680EA /* Polyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BFC22625CB4400F680EA /* Polyline.swift */; };
+		A271BFCE2626E00200F680EA /* CLLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BFCD2626E00200F680EA /* CLLocation.swift */; };
+		A271BFD62626E43E00F680EA /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BFD52626E43E00F680EA /* UIColor.swift */; };
+		A271BFDE2626E4FA00F680EA /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BFDD2626E4FA00F680EA /* CGFloat.swift */; };
+		A271C029262C303A00F680EA /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271C028262C303A00F680EA /* ShadowView.swift */; };
+		A271C03D262C349E00F680EA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271C03C262C349E00F680EA /* Settings.swift */; };
+		A271C045262C3F3E00F680EA /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271C044262C3F3E00F680EA /* Address.swift */; };
+		A271C055262E073000F680EA /* iSearchHeaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271C054262E073000F680EA /* iSearchHeaderPresenter.swift */; };
+		A271C05F262E078A00F680EA /* SearchHeaderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271C05E262E078A00F680EA /* SearchHeaderPresenter.swift */; };
+		A271C067262E07D300F680EA /* iSearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271C066262E07D300F680EA /* iSearchHeaderView.swift */; };
+		A271C06F262E07E300F680EA /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271C06E262E07E300F680EA /* SearchHeaderView.swift */; };
+		A27FF3B726305ECB0052C921 /* iSearchFooterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3B626305ECB0052C921 /* iSearchFooterInteractor.swift */; };
+		A27FF3BC26305ED60052C921 /* SearchFooterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3BB26305ED60052C921 /* SearchFooterInteractor.swift */; };
+		A27FF3C82630693E0052C921 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3C72630693E0052C921 /* AppManager.swift */; };
+		A27FF3D32630978E0052C921 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3D22630978E0052C921 /* String.swift */; };
+		A27FF3E3263459DB0052C921 /* iConstrainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3E2263459DB0052C921 /* iConstrainPresenter.swift */; };
+		A27FF3E8263459EE0052C921 /* ConstraintPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3E7263459EE0052C921 /* ConstraintPresenter.swift */; };
+		A27FF3EF26345AA00052C921 /* iConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3EE26345AA00052C921 /* iConstraintView.swift */; };
+		A27FF3F426345AB50052C921 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27FF3F326345AB50052C921 /* ConstraintView.swift */; };
+		A28029E6263468A000DB01F9 /* iConstraintInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029E5263468A000DB01F9 /* iConstraintInteractor.swift */; };
+		A28029EB263468AC00DB01F9 /* ConstraintInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029EA263468AC00DB01F9 /* ConstraintInteractor.swift */; };
+		DCDD7CC336D7B0D487CF11CF /* Pods_Audi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC255776C1155EDA8923771 /* Pods_Audi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A271BEAC2621BFA300F680EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A271BE8D2621BF8800F680EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A271BE942621BF8900F680EA;
+			remoteInfo = Audi;
+		};
+		A271BEB72621BFA300F680EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A271BE8D2621BF8800F680EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A271BE942621BF8900F680EA;
+			remoteInfo = Audi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07EB45B87E0660E00D63E895 /* Pods_AudiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25481BF71F3BF8C598A23D7E /* Pods-AudiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiTests.release.xcconfig"; path = "Target Support Files/Pods-AudiTests/Pods-AudiTests.release.xcconfig"; sourceTree = "<group>"; };
+		2E686405EB498DDFDD439F79 /* Pods-Audi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audi.debug.xcconfig"; path = "Target Support Files/Pods-Audi/Pods-Audi.debug.xcconfig"; sourceTree = "<group>"; };
+		4FC255776C1155EDA8923771 /* Pods_Audi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7B431F485EFE847C57FBD5 /* Pods-Audi-AudiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audi-AudiUITests.release.xcconfig"; path = "Target Support Files/Pods-Audi-AudiUITests/Pods-Audi-AudiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93478D9150408993790E8F55 /* Pods_Audi_AudiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audi_AudiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B2EE966C6CD1566065E68A /* Pods-Audi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audi.release.xcconfig"; path = "Target Support Files/Pods-Audi/Pods-Audi.release.xcconfig"; sourceTree = "<group>"; };
+		9B834DB94010CCFDA4F2B7FC /* Pods-Audi-AudiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audi-AudiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Audi-AudiUITests/Pods-Audi-AudiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A206ADB8262F404900CD495B /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		A206ADC0262F407300CD495B /* iSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchInteractor.swift; sourceTree = "<group>"; };
+		A206ADC9262F438300CD495B /* iPlaceHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPlaceHttpService.swift; sourceTree = "<group>"; };
+		A206ADD1262F43C300CD495B /* PlaceHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHttpService.swift; sourceTree = "<group>"; };
+		A206ADDC262F504E00CD495B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		A206ADEC2630560000CD495B /* iSearchFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchFooterView.swift; sourceTree = "<group>"; };
+		A206ADF42630561C00CD495B /* SearchFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterView.swift; sourceTree = "<group>"; };
+		A24D381726305B5A004A7E7A /* iSearchFooterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchFooterPresenter.swift; sourceTree = "<group>"; };
+		A24D381D26305B91004A7E7A /* SearchFooterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterPresenter.swift; sourceTree = "<group>"; };
+		A271BE952621BF8900F680EA /* Audi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A271BE982621BF8900F680EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A271BE9A2621BF8900F680EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A271BEA12621BFA300F680EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A271BEA42621BFA300F680EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A271BEA62621BFA300F680EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A271BEAB2621BFA300F680EA /* AudiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A271BEAF2621BFA300F680EA /* AudiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiTests.swift; sourceTree = "<group>"; };
+		A271BEB12621BFA300F680EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A271BEB62621BFA300F680EA /* AudiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A271BEBA2621BFA300F680EA /* AudiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiUITests.swift; sourceTree = "<group>"; };
+		A271BEBC2621BFA300F680EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A271BECE2621C06500F680EA /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A271BED62621C07700F680EA /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		A271BEE22621C10A00F680EA /* iMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMapView.swift; sourceTree = "<group>"; };
+		A271BEF12621C15100F680EA /* iMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMapPresenter.swift; sourceTree = "<group>"; };
+		A271BEF62621C23300F680EA /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		A271BF052622039D00F680EA /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		A271BF172622082100F680EA /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		A271BF2A2624329200F680EA /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		A271BF392624331700F680EA /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		A271BF422624339500F680EA /* iMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMapInteractor.swift; sourceTree = "<group>"; };
+		A271BF50262433CF00F680EA /* iLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iLocationService.swift; sourceTree = "<group>"; };
+		A271BF5E2624380E00F680EA /* iMapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMapService.swift; sourceTree = "<group>"; };
+		A271BF632624381B00F680EA /* MapService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapService.swift; sourceTree = "<group>"; };
+		A271BF8726259F0500F680EA /* iHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iHttpService.swift; sourceTree = "<group>"; };
+		A271BF932625A00E00F680EA /* iDerictionHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDerictionHttpService.swift; sourceTree = "<group>"; };
+		A271BF9D2625A05400F680EA /* DirestionHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirestionHttpService.swift; sourceTree = "<group>"; };
+		A271BFB92625CA1600F680EA /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		A271BFC22625CB4400F680EA /* Polyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyline.swift; sourceTree = "<group>"; };
+		A271BFCD2626E00200F680EA /* CLLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocation.swift; sourceTree = "<group>"; };
+		A271BFD52626E43E00F680EA /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		A271BFDD2626E4FA00F680EA /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		A271C028262C303A00F680EA /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		A271C03C262C349E00F680EA /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A271C044262C3F3E00F680EA /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		A271C054262E073000F680EA /* iSearchHeaderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchHeaderPresenter.swift; sourceTree = "<group>"; };
+		A271C05E262E078A00F680EA /* SearchHeaderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderPresenter.swift; sourceTree = "<group>"; };
+		A271C066262E07D300F680EA /* iSearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchHeaderView.swift; sourceTree = "<group>"; };
+		A271C06E262E07E300F680EA /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
+		A27FF3B626305ECB0052C921 /* iSearchFooterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchFooterInteractor.swift; sourceTree = "<group>"; };
+		A27FF3BB26305ED60052C921 /* SearchFooterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterInteractor.swift; sourceTree = "<group>"; };
+		A27FF3C72630693E0052C921 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		A27FF3D22630978E0052C921 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A27FF3E2263459DB0052C921 /* iConstrainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iConstrainPresenter.swift; sourceTree = "<group>"; };
+		A27FF3E7263459EE0052C921 /* ConstraintPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintPresenter.swift; sourceTree = "<group>"; };
+		A27FF3EE26345AA00052C921 /* iConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iConstraintView.swift; sourceTree = "<group>"; };
+		A27FF3F326345AB50052C921 /* ConstraintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
+		A28029E5263468A000DB01F9 /* iConstraintInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iConstraintInteractor.swift; sourceTree = "<group>"; };
+		A28029EA263468AC00DB01F9 /* ConstraintInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintInteractor.swift; sourceTree = "<group>"; };
+		F05FE6AFF698104B04A2C3A4 /* Pods-AudiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiTests.debug.xcconfig"; path = "Target Support Files/Pods-AudiTests/Pods-AudiTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A271BE922621BF8900F680EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDD7CC336D7B0D487CF11CF /* Pods_Audi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A271BEA82621BFA300F680EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B8277C0A356E3B55EF4024 /* Pods_AudiTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A271BEB32621BFA300F680EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F3A6EB24FB7C72BA58A058 /* Pods_Audi_AudiUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CEEEA1D8DAC295666B86CED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E686405EB498DDFDD439F79 /* Pods-Audi.debug.xcconfig */,
+				95B2EE966C6CD1566065E68A /* Pods-Audi.release.xcconfig */,
+				9B834DB94010CCFDA4F2B7FC /* Pods-Audi-AudiUITests.debug.xcconfig */,
+				8B7B431F485EFE847C57FBD5 /* Pods-Audi-AudiUITests.release.xcconfig */,
+				F05FE6AFF698104B04A2C3A4 /* Pods-AudiTests.debug.xcconfig */,
+				25481BF71F3BF8C598A23D7E /* Pods-AudiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CD79E0FFF6784A8AA01C8F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FC255776C1155EDA8923771 /* Pods_Audi.framework */,
+				93478D9150408993790E8F55 /* Pods_Audi_AudiUITests.framework */,
+				07EB45B87E0660E00D63E895 /* Pods_AudiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A206ADC5262F407D00CD495B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADD6262F43CE00CD495B /* Services */,
+				A27FF3AD26305EB70052C921 /* SearchHeader */,
+				A27FF3C026305EDC0052C921 /* SearchFooter */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A206ADD6262F43CE00CD495B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADD7262F43D900CD495B /* HttpService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A206ADD7262F43D900CD495B /* HttpService */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADD8262F43E300CD495B /* GooglePlaces */,
+			);
+			path = HttpService;
+			sourceTree = "<group>";
+		};
+		A206ADD8262F43E300CD495B /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADC9262F438300CD495B /* iPlaceHttpService.swift */,
+				A206ADD1262F43C300CD495B /* PlaceHttpService.swift */,
+			);
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		A206ADE1262F505900CD495B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADDC262F504E00CD495B /* Place.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A206ADEB263055C400CD495B /* SearchHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A271C066262E07D300F680EA /* iSearchHeaderView.swift */,
+				A271C06E262E07E300F680EA /* SearchHeaderView.swift */,
+			);
+			path = SearchHeader;
+			sourceTree = "<group>";
+		};
+		A206ADF9263056FA00CD495B /* SearchFooter */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADEC2630560000CD495B /* iSearchFooterView.swift */,
+				A206ADF42630561C00CD495B /* SearchFooterView.swift */,
+			);
+			path = SearchFooter;
+			sourceTree = "<group>";
+		};
+		A24D381026305AFE004A7E7A /* SearchHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A271C054262E073000F680EA /* iSearchHeaderPresenter.swift */,
+				A271C05E262E078A00F680EA /* SearchHeaderPresenter.swift */,
+			);
+			path = SearchHeader;
+			sourceTree = "<group>";
+		};
+		A24D382226305B98004A7E7A /* SearchFooter */ = {
+			isa = PBXGroup;
+			children = (
+				A24D381726305B5A004A7E7A /* iSearchFooterPresenter.swift */,
+				A24D381D26305B91004A7E7A /* SearchFooterPresenter.swift */,
+			);
+			path = SearchFooter;
+			sourceTree = "<group>";
+		};
+		A271BE8C2621BF8800F680EA = {
+			isa = PBXGroup;
+			children = (
+				A271BE972621BF8900F680EA /* Audi */,
+				A271BEAE2621BFA300F680EA /* AudiTests */,
+				A271BEB92621BFA300F680EA /* AudiUITests */,
+				A271BE962621BF8900F680EA /* Products */,
+				6CEEEA1D8DAC295666B86CED /* Pods */,
+				9CD79E0FFF6784A8AA01C8F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A271BE962621BF8900F680EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A271BE952621BF8900F680EA /* Audi.app */,
+				A271BEAB2621BFA300F680EA /* AudiTests.xctest */,
+				A271BEB62621BFA300F680EA /* AudiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A271BE972621BF8900F680EA /* Audi */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF13262203D700F680EA /* Global */,
+				A27FF3ED26345A670052C921 /* ConstraintModule */,
+				A271BEE02621C0D700F680EA /* MapModule */,
+				A271C059262E074800F680EA /* SearchModule */,
+				A271BE982621BF8900F680EA /* AppDelegate.swift */,
+				A271BE9A2621BF8900F680EA /* SceneDelegate.swift */,
+				A271BEA12621BFA300F680EA /* Assets.xcassets */,
+				A271BEA32621BFA300F680EA /* LaunchScreen.storyboard */,
+				A271BEA62621BFA300F680EA /* Info.plist */,
+			);
+			path = Audi;
+			sourceTree = "<group>";
+		};
+		A271BEAE2621BFA300F680EA /* AudiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A271BEAF2621BFA300F680EA /* AudiTests.swift */,
+				A271BEB12621BFA300F680EA /* Info.plist */,
+			);
+			path = AudiTests;
+			sourceTree = "<group>";
+		};
+		A271BEB92621BFA300F680EA /* AudiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A271BEBA2621BFA300F680EA /* AudiUITests.swift */,
+				A271BEBC2621BFA300F680EA /* Info.plist */,
+			);
+			path = AudiUITests;
+			sourceTree = "<group>";
+		};
+		A271BEDE2621C0C300F680EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A271BEE22621C10A00F680EA /* iMapView.swift */,
+				A271BECE2621C06500F680EA /* MapViewController.swift */,
+				A271BEF62621C23300F680EA /* MapViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A271BEDF2621C0C900F680EA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A271BEF12621C15100F680EA /* iMapPresenter.swift */,
+				A271BED62621C07700F680EA /* MapPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A271BEE02621C0D700F680EA /* MapModule */ = {
+			isa = PBXGroup;
+			children = (
+				A271BFBE2625CA1C00F680EA /* Models */,
+				A271BEDE2621C0C300F680EA /* View */,
+				A271BEDF2621C0C900F680EA /* Presenter */,
+				A271BF35262432D000F680EA /* Interactor */,
+			);
+			path = MapModule;
+			sourceTree = "<group>";
+		};
+		A271BF13262203D700F680EA /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF232622096300F680EA /* Keys */,
+				A271BF222622095A00F680EA /* Extensions */,
+				A271BF8F26259F2200F680EA /* Protocols */,
+				A271C02D262C312800F680EA /* Classes */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A271BF222622095A00F680EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF172622082100F680EA /* UIViewController.swift */,
+				A271BFCD2626E00200F680EA /* CLLocation.swift */,
+				A271BFD52626E43E00F680EA /* UIColor.swift */,
+				A271BFDD2626E4FA00F680EA /* CGFloat.swift */,
+				A27FF3D22630978E0052C921 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A271BF232622096300F680EA /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF052622039D00F680EA /* Keys.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		A271BF35262432D000F680EA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF7B26256E0500F680EA /* Services */,
+				A271BF422624339500F680EA /* iMapInteractor.swift */,
+				A271BF2A2624329200F680EA /* MapInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A271BF3E2624332200F680EA /* LocationService */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF50262433CF00F680EA /* iLocationService.swift */,
+				A271BF392624331700F680EA /* LocationService.swift */,
+			);
+			path = LocationService;
+			sourceTree = "<group>";
+		};
+		A271BF652624382200F680EA /* MapService */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF5E2624380E00F680EA /* iMapService.swift */,
+				A271BF632624381B00F680EA /* MapService.swift */,
+			);
+			path = MapService;
+			sourceTree = "<group>";
+		};
+		A271BF7B26256E0500F680EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF3E2624332200F680EA /* LocationService */,
+				A271BF652624382200F680EA /* MapService */,
+				A271BF982625A01300F680EA /* HttpService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A271BF8F26259F2200F680EA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF8726259F0500F680EA /* iHttpService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A271BF982625A01300F680EA /* HttpService */ = {
+			isa = PBXGroup;
+			children = (
+				A271BFE52629ACD500F680EA /* GoogleDirections */,
+			);
+			path = HttpService;
+			sourceTree = "<group>";
+		};
+		A271BFBE2625CA1C00F680EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A271BFB92625CA1600F680EA /* Route.swift */,
+				A271BFC22625CB4400F680EA /* Polyline.swift */,
+				A271C044262C3F3E00F680EA /* Address.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A271BFE52629ACD500F680EA /* GoogleDirections */ = {
+			isa = PBXGroup;
+			children = (
+				A271BF932625A00E00F680EA /* iDerictionHttpService.swift */,
+				A271BF9D2625A05400F680EA /* DirestionHttpService.swift */,
+			);
+			path = GoogleDirections;
+			sourceTree = "<group>";
+		};
+		A271C02D262C312800F680EA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A27FF3C72630693E0052C921 /* AppManager.swift */,
+				A271C03C262C349E00F680EA /* Settings.swift */,
+				A271C028262C303A00F680EA /* ShadowView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A271C059262E074800F680EA /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADE1262F505900CD495B /* Models */,
+				A271C07F262E096000F680EA /* View */,
+				A271C05D262E076000F680EA /* Presenter */,
+				A206ADC5262F407D00CD495B /* Interactor */,
+			);
+			path = SearchModule;
+			sourceTree = "<group>";
+		};
+		A271C05D262E076000F680EA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A24D381026305AFE004A7E7A /* SearchHeader */,
+				A24D382226305B98004A7E7A /* SearchFooter */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A271C07F262E096000F680EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADEB263055C400CD495B /* SearchHeader */,
+				A206ADF9263056FA00CD495B /* SearchFooter */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A27FF3AD26305EB70052C921 /* SearchHeader */ = {
+			isa = PBXGroup;
+			children = (
+				A206ADC0262F407300CD495B /* iSearchInteractor.swift */,
+				A206ADB8262F404900CD495B /* SearchInteractor.swift */,
+			);
+			path = SearchHeader;
+			sourceTree = "<group>";
+		};
+		A27FF3C026305EDC0052C921 /* SearchFooter */ = {
+			isa = PBXGroup;
+			children = (
+				A27FF3B626305ECB0052C921 /* iSearchFooterInteractor.swift */,
+				A27FF3BB26305ED60052C921 /* SearchFooterInteractor.swift */,
+			);
+			path = SearchFooter;
+			sourceTree = "<group>";
+		};
+		A27FF3EC26345A550052C921 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A27FF3E2263459DB0052C921 /* iConstrainPresenter.swift */,
+				A27FF3E7263459EE0052C921 /* ConstraintPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A27FF3ED26345A670052C921 /* ConstraintModule */ = {
+			isa = PBXGroup;
+			children = (
+				A27FF3FE26345AF60052C921 /* View */,
+				A27FF3EC26345A550052C921 /* Presenter */,
+				A28029EF263468B000DB01F9 /* Interactor */,
+			);
+			path = ConstraintModule;
+			sourceTree = "<group>";
+		};
+		A27FF3FE26345AF60052C921 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A27FF3EE26345AA00052C921 /* iConstraintView.swift */,
+				A27FF3F326345AB50052C921 /* ConstraintView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A28029EF263468B000DB01F9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A28029E5263468A000DB01F9 /* iConstraintInteractor.swift */,
+				A28029EA263468AC00DB01F9 /* ConstraintInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A271BE942621BF8900F680EA /* Audi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A271BEBF2621BFA300F680EA /* Build configuration list for PBXNativeTarget "Audi" */;
+			buildPhases = (
+				9FB1559A3F3BA88A4E55D6E2 /* [CP] Check Pods Manifest.lock */,
+				A271BE912621BF8900F680EA /* Sources */,
+				A271BE922621BF8900F680EA /* Frameworks */,
+				A271BE932621BF8900F680EA /* Resources */,
+				4F1AF2F188C2F691688E39EF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Audi;
+			productName = Audi;
+			productReference = A271BE952621BF8900F680EA /* Audi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A271BEAA2621BFA300F680EA /* AudiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A271BEC22621BFA300F680EA /* Build configuration list for PBXNativeTarget "AudiTests" */;
+			buildPhases = (
+				9FDD3FD601635DBBF6359D25 /* [CP] Check Pods Manifest.lock */,
+				A271BEA72621BFA300F680EA /* Sources */,
+				A271BEA82621BFA300F680EA /* Frameworks */,
+				A271BEA92621BFA300F680EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A271BEAD2621BFA300F680EA /* PBXTargetDependency */,
+			);
+			name = AudiTests;
+			productName = AudiTests;
+			productReference = A271BEAB2621BFA300F680EA /* AudiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A271BEB52621BFA300F680EA /* AudiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A271BEC52621BFA300F680EA /* Build configuration list for PBXNativeTarget "AudiUITests" */;
+			buildPhases = (
+				33A093AB4096685FEFA6428B /* [CP] Check Pods Manifest.lock */,
+				A271BEB22621BFA300F680EA /* Sources */,
+				A271BEB32621BFA300F680EA /* Frameworks */,
+				A271BEB42621BFA300F680EA /* Resources */,
+				C36BF69F68D90300AA026D48 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A271BEB82621BFA300F680EA /* PBXTargetDependency */,
+			);
+			name = AudiUITests;
+			productName = AudiUITests;
+			productReference = A271BEB62621BFA300F680EA /* AudiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A271BE8D2621BF8800F680EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A271BE942621BF8900F680EA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A271BEAA2621BFA300F680EA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A271BE942621BF8900F680EA;
+					};
+					A271BEB52621BFA300F680EA = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A271BE942621BF8900F680EA;
+					};
+				};
+			};
+			buildConfigurationList = A271BE902621BF8800F680EA /* Build configuration list for PBXProject "Audi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A271BE8C2621BF8800F680EA;
+			productRefGroup = A271BE962621BF8900F680EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A271BE942621BF8900F680EA /* Audi */,
+				A271BEAA2621BFA300F680EA /* AudiTests */,
+				A271BEB52621BFA300F680EA /* AudiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A271BE932621BF8900F680EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A271BEA52621BFA300F680EA /* LaunchScreen.storyboard in Resources */,
+				A271BEA22621BFA300F680EA /* Assets.xcassets in Resources */,
+				A271BEF72621C23300F680EA /* MapViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A271BEA92621BFA300F680EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A271BEB42621BFA300F680EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33A093AB4096685FEFA6428B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audi-AudiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1AF2F188C2F691688E39EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audi/Pods-Audi-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audi/Pods-Audi-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Audi/Pods-Audi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB1559A3F3BA88A4E55D6E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Audi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FDD3FD601635DBBF6359D25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C36BF69F68D90300AA026D48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audi-AudiUITests/Pods-Audi-AudiUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Audi-AudiUITests/Pods-Audi-AudiUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Audi-AudiUITests/Pods-Audi-AudiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A271BE912621BF8900F680EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A271C05F262E078A00F680EA /* SearchHeaderPresenter.swift in Sources */,
+				A271BF2B2624329200F680EA /* MapInteractor.swift in Sources */,
+				A206ADB9262F404900CD495B /* SearchInteractor.swift in Sources */,
+				A27FF3E8263459EE0052C921 /* ConstraintPresenter.swift in Sources */,
+				A27FF3E3263459DB0052C921 /* iConstrainPresenter.swift in Sources */,
+				A206ADCA262F438300CD495B /* iPlaceHttpService.swift in Sources */,
+				A271C055262E073000F680EA /* iSearchHeaderPresenter.swift in Sources */,
+				A206ADF52630561C00CD495B /* SearchFooterView.swift in Sources */,
+				A28029EB263468AC00DB01F9 /* ConstraintInteractor.swift in Sources */,
+				A271BF5F2624380E00F680EA /* iMapService.swift in Sources */,
+				A206ADED2630560000CD495B /* iSearchFooterView.swift in Sources */,
+				A27FF3F426345AB50052C921 /* ConstraintView.swift in Sources */,
+				A28029E6263468A000DB01F9 /* iConstraintInteractor.swift in Sources */,
+				A271BF51262433CF00F680EA /* iLocationService.swift in Sources */,
+				A206ADD2262F43C300CD495B /* PlaceHttpService.swift in Sources */,
+				A271BF9E2625A05400F680EA /* DirestionHttpService.swift in Sources */,
+				A271BFCE2626E00200F680EA /* CLLocation.swift in Sources */,
+				A27FF3EF26345AA00052C921 /* iConstraintView.swift in Sources */,
+				A271BF942625A00E00F680EA /* iDerictionHttpService.swift in Sources */,
+				A271BFBA2625CA1600F680EA /* Route.swift in Sources */,
+				A271BFD62626E43E00F680EA /* UIColor.swift in Sources */,
+				A271C06F262E07E300F680EA /* SearchHeaderView.swift in Sources */,
+				A271BEE32621C10A00F680EA /* iMapView.swift in Sources */,
+				A271C045262C3F3E00F680EA /* Address.swift in Sources */,
+				A27FF3D32630978E0052C921 /* String.swift in Sources */,
+				A271BFDE2626E4FA00F680EA /* CGFloat.swift in Sources */,
+				A271BEF22621C15100F680EA /* iMapPresenter.swift in Sources */,
+				A271BFC32625CB4400F680EA /* Polyline.swift in Sources */,
+				A271BE992621BF8900F680EA /* AppDelegate.swift in Sources */,
+				A271C029262C303A00F680EA /* ShadowView.swift in Sources */,
+				A27FF3C82630693E0052C921 /* AppManager.swift in Sources */,
+				A27FF3BC26305ED60052C921 /* SearchFooterInteractor.swift in Sources */,
+				A27FF3B726305ECB0052C921 /* iSearchFooterInteractor.swift in Sources */,
+				A271BF3A2624331700F680EA /* LocationService.swift in Sources */,
+				A271BF182622082200F680EA /* UIViewController.swift in Sources */,
+				A206ADDD262F504E00CD495B /* Place.swift in Sources */,
+				A206ADC1262F407300CD495B /* iSearchInteractor.swift in Sources */,
+				A271BED72621C07700F680EA /* MapPresenter.swift in Sources */,
+				A271BF432624339500F680EA /* iMapInteractor.swift in Sources */,
+				A24D381826305B5A004A7E7A /* iSearchFooterPresenter.swift in Sources */,
+				A271BF062622039D00F680EA /* Keys.swift in Sources */,
+				A24D381E26305B91004A7E7A /* SearchFooterPresenter.swift in Sources */,
+				A271BE9B2621BF8900F680EA /* SceneDelegate.swift in Sources */,
+				A271C03D262C349E00F680EA /* Settings.swift in Sources */,
+				A271BECF2621C06500F680EA /* MapViewController.swift in Sources */,
+				A271C067262E07D300F680EA /* iSearchHeaderView.swift in Sources */,
+				A271BF642624381B00F680EA /* MapService.swift in Sources */,
+				A271BF8826259F0500F680EA /* iHttpService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A271BEA72621BFA300F680EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A271BEB02621BFA300F680EA /* AudiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A271BEB22621BFA300F680EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A271BEBB2621BFA300F680EA /* AudiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A271BEAD2621BFA300F680EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A271BE942621BF8900F680EA /* Audi */;
+			targetProxy = A271BEAC2621BFA300F680EA /* PBXContainerItemProxy */;
+		};
+		A271BEB82621BFA300F680EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A271BE942621BF8900F680EA /* Audi */;
+			targetProxy = A271BEB72621BFA300F680EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A271BEA32621BFA300F680EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A271BEA42621BFA300F680EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A271BEBD2621BFA300F680EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A271BEBE2621BFA300F680EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A271BEC02621BFA300F680EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E686405EB498DDFDD439F79 /* Pods-Audi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7JQB9A44;
+				INFOPLIST_FILE = Audi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EADuka.Audi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A271BEC12621BFA300F680EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B2EE966C6CD1566065E68A /* Pods-Audi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7JQB9A44;
+				INFOPLIST_FILE = Audi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EADuka.Audi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A271BEC32621BFA300F680EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05FE6AFF698104B04A2C3A4 /* Pods-AudiTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7JQB9A44;
+				INFOPLIST_FILE = AudiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EADuka.AudiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audi.app/Audi";
+			};
+			name = Debug;
+		};
+		A271BEC42621BFA300F680EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25481BF71F3BF8C598A23D7E /* Pods-AudiTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7JQB9A44;
+				INFOPLIST_FILE = AudiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EADuka.AudiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audi.app/Audi";
+			};
+			name = Release;
+		};
+		A271BEC62621BFA300F680EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B834DB94010CCFDA4F2B7FC /* Pods-Audi-AudiUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7JQB9A44;
+				INFOPLIST_FILE = AudiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EADuka.AudiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Audi;
+			};
+			name = Debug;
+		};
+		A271BEC72621BFA300F680EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B7B431F485EFE847C57FBD5 /* Pods-Audi-AudiUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5L7JQB9A44;
+				INFOPLIST_FILE = AudiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EADuka.AudiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Audi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A271BE902621BF8800F680EA /* Build configuration list for PBXProject "Audi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A271BEBD2621BFA300F680EA /* Debug */,
+				A271BEBE2621BFA300F680EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A271BEBF2621BFA300F680EA /* Build configuration list for PBXNativeTarget "Audi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A271BEC02621BFA300F680EA /* Debug */,
+				A271BEC12621BFA300F680EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A271BEC22621BFA300F680EA /* Build configuration list for PBXNativeTarget "AudiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A271BEC32621BFA300F680EA /* Debug */,
+				A271BEC42621BFA300F680EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A271BEC52621BFA300F680EA /* Build configuration list for PBXNativeTarget "AudiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A271BEC62621BFA300F680EA /* Debug */,
+				A271BEC72621BFA300F680EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A271BE8D2621BF8800F680EA /* Project object */;
+}
