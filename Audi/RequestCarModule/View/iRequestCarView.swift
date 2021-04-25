@@ -7,6 +7,11 @@
 
 import Foundation
 
-protocol iRequestCarView {
+protocol iRequestCarView: AnyObject {
+    var presenter: iRequestCarPresenter? { set get }
+    var delegate: iRequestCarViewDelegate? { set get }
+}
+
+protocol iRequestCarViewDelegate {
     
 }

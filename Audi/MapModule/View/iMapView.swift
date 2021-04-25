@@ -24,6 +24,7 @@ protocol iMapView: AnyObject {
     func activateRouteState()
     func activateNoRouteState()
     func runLayoutIfNeeded()
+    func showViewController(_ viewController: UIViewController)
 }
 
 protocol iMapViewDelegate: AnyObject {

@@ -158,7 +158,8 @@ extension MapPresenter: iMapViewDelegate {
     }
     
     func didTapRequestRoute() {
-        
+        guard let requestViewController = AppManager.main.buildRequestCarViewController() else { return }
+        self.mapView?.showViewController(requestViewController)
     }
     
 }

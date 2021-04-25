@@ -65,6 +65,10 @@
 		A28029F72635A20700DB01F9 /* iRequestCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029F62635A20700DB01F9 /* iRequestCarView.swift */; };
 		A28029FC2635A22800DB01F9 /* RequestCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28029FB2635A22800DB01F9 /* RequestCarViewController.swift */; };
 		A2802A012635A24C00DB01F9 /* RequestCarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2802A002635A24C00DB01F9 /* RequestCarViewController.storyboard */; };
+		A2802A162635B90500DB01F9 /* iRequestCarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2802A152635B90500DB01F9 /* iRequestCarPresenter.swift */; };
+		A2802A1B2635B91500DB01F9 /* RequestCarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2802A1A2635B91500DB01F9 /* RequestCarPresenter.swift */; };
+		A2802A242635B9A000DB01F9 /* iRequestCarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2802A232635B9A000DB01F9 /* iRequestCarInteractor.swift */; };
+		A2802A292635BA0E00DB01F9 /* RequestCarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2802A282635BA0E00DB01F9 /* RequestCarInteractor.swift */; };
 		DCDD7CC336D7B0D487CF11CF /* Pods_Audi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FC255776C1155EDA8923771 /* Pods_Audi.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +160,10 @@
 		A28029F62635A20700DB01F9 /* iRequestCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRequestCarView.swift; sourceTree = "<group>"; };
 		A28029FB2635A22800DB01F9 /* RequestCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCarViewController.swift; sourceTree = "<group>"; };
 		A2802A002635A24C00DB01F9 /* RequestCarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestCarViewController.storyboard; sourceTree = "<group>"; };
+		A2802A152635B90500DB01F9 /* iRequestCarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRequestCarPresenter.swift; sourceTree = "<group>"; };
+		A2802A1A2635B91500DB01F9 /* RequestCarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCarPresenter.swift; sourceTree = "<group>"; };
+		A2802A232635B9A000DB01F9 /* iRequestCarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iRequestCarInteractor.swift; sourceTree = "<group>"; };
+		A2802A282635BA0E00DB01F9 /* RequestCarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCarInteractor.swift; sourceTree = "<group>"; };
 		F05FE6AFF698104B04A2C3A4 /* Pods-AudiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiTests.debug.xcconfig"; path = "Target Support Files/Pods-AudiTests/Pods-AudiTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -588,8 +596,28 @@
 			isa = PBXGroup;
 			children = (
 				A2802A052635A25A00DB01F9 /* View */,
+				A2802A222635B95B00DB01F9 /* Presenter */,
+				A2802A2D2635BA1600DB01F9 /* Interactor */,
 			);
 			path = RequestCarModule;
+			sourceTree = "<group>";
+		};
+		A2802A222635B95B00DB01F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A2802A152635B90500DB01F9 /* iRequestCarPresenter.swift */,
+				A2802A1A2635B91500DB01F9 /* RequestCarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A2802A2D2635BA1600DB01F9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A2802A232635B9A000DB01F9 /* iRequestCarInteractor.swift */,
+				A2802A282635BA0E00DB01F9 /* RequestCarInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -874,6 +902,9 @@
 				A271BF432624339500F680EA /* iMapInteractor.swift in Sources */,
 				A24D381826305B5A004A7E7A /* iSearchFooterPresenter.swift in Sources */,
 				A271BF062622039D00F680EA /* Keys.swift in Sources */,
+				A2802A292635BA0E00DB01F9 /* RequestCarInteractor.swift in Sources */,
+				A2802A242635B9A000DB01F9 /* iRequestCarInteractor.swift in Sources */,
+				A2802A162635B90500DB01F9 /* iRequestCarPresenter.swift in Sources */,
 				A24D381E26305B91004A7E7A /* SearchFooterPresenter.swift in Sources */,
 				A271BE9B2621BF8900F680EA /* SceneDelegate.swift in Sources */,
 				A271C03D262C349E00F680EA /* Settings.swift in Sources */,
@@ -881,6 +912,7 @@
 				A271C067262E07D300F680EA /* iSearchHeaderView.swift in Sources */,
 				A271BF642624381B00F680EA /* MapService.swift in Sources */,
 				A271BF8826259F0500F680EA /* iHttpService.swift in Sources */,
+				A2802A1B2635B91500DB01F9 /* RequestCarPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

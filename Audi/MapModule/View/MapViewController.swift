@@ -105,6 +105,13 @@ extension MapViewController: iMapView {
         }
     }
     
+    func showViewController(_ viewController: UIViewController) {
+        viewController.willMove(toParent: self)
+        self.addChild(viewController)
+        self.view.addSubview(viewController.view)
+        viewController.didMove(toParent: self)
+    }
+    
 }
 
 //MARK: - IBActions

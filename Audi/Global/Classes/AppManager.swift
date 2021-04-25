@@ -11,10 +11,11 @@ class AppManager: NSObject {
     
     static let main = AppManager()
     
-    @objc dynamic var mapPresenter: MapPresenter?
-    @objc dynamic var searchHeaderPresenter: SearchHeaderPresenter?
-    @objc dynamic var searchFooterPresenter: SearchFooterPresenter?
-    @objc dynamic var constraintPresenter: ConstraintPresenter?
+    @objc dynamic weak var mapPresenter: MapPresenter?
+    @objc dynamic weak var searchHeaderPresenter: SearchHeaderPresenter?
+    @objc dynamic weak var searchFooterPresenter: SearchFooterPresenter?
+    @objc dynamic weak var constraintPresenter: ConstraintPresenter?
+    @objc dynamic weak var requestCarPresenter: RequestCarPresenter?
     private var kvo_SearchHeaderPresenter_places: NSKeyValueObservation?
     private var kvo_SearchHeaderPresenter_originPlace: NSKeyValueObservation?
     private var kvo_SearchHeaderPresenter_destinationPlace: NSKeyValueObservation?
@@ -62,7 +63,11 @@ extension AppManager {
     }
     
     func buildRequestCarViewController() -> RequestCarViewController? {
-        return RequestCarViewController()
+        let requestCarView = RequestCarViewController.initFromStoryboardWithTheSameName()
+        let requestCarInteractor = RequestCarInteractor()
+        let requestCarPresenter = RequestCarPresenter(view: requestCarView, interactor: requestCarInteractor)
+        self.requestCarPresenter = requestCarPresenter
+        return requestCarView
     }
     
 }

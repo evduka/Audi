@@ -12,8 +12,13 @@ class RequestCarViewController: UIViewController {
     @IBOutlet weak var pricesCollectionView: UICollectionView!
     @IBOutlet weak var paymentsCollectionView: UICollectionView!
     
+    var presenter: iRequestCarPresenter?
+    var delegate: iRequestCarViewDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(#function)
         
         pricesCollectionView.delegate = self
         pricesCollectionView.dataSource = self
@@ -21,6 +26,16 @@ class RequestCarViewController: UIViewController {
         paymentsCollectionView.delegate = self
         paymentsCollectionView.dataSource = self
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(#function)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        print(#function)
     }
     
 }
@@ -34,7 +49,7 @@ extension RequestCarViewController: UICollectionViewDelegate {
 extension RequestCarViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
