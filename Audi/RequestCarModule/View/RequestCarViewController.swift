@@ -7,10 +7,16 @@
 
 import UIKit
 
+fileprivate let SETTINGS_VIEW_HEIGHT: CGFloat = 380
+
 class RequestCarViewController: UIViewController {
     
     @IBOutlet weak var pricesCollectionView: UICollectionView!
     @IBOutlet weak var paymentsCollectionView: UICollectionView!
+    @IBOutlet weak var backgroundColoredView: UIView!
+    
+    @IBOutlet weak var settingsViewBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var settingsViewHeightConstraint: NSLayoutConstraint!
     
     var presenter: iRequestCarPresenter?
     var delegate: iRequestCarViewDelegate?
@@ -18,24 +24,54 @@ class RequestCarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(#function)
-        
-        pricesCollectionView.delegate = self
-        pricesCollectionView.dataSource = self
-        
-        paymentsCollectionView.delegate = self
-        paymentsCollectionView.dataSource = self
+        if let delegate = delegate { delegate.viewDidLoad() }
+        if let presenter = presenter { presenter.setCollectionViews([pricesCollectionView, paymentsCollectionView]) }
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(#function)
+        
+        prepareToShowYourselfAnimated()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print(#function)
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        showViewAnimated()
+    }
+    
+}
+
+//MARK: - iRequestCarView
+extension RequestCarViewController: iRequestCarView {
+    
+    func showViewAnimated() {
+        UIView.animate(withDuration: 0.6) { [weak self] in
+            self?.backgroundColoredView.alpha = 0.3;
+            self?.view.layoutIfNeeded() }
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.settingsViewBottomConstraint.constant = 0;
+            self?.view.layoutIfNeeded()
+        }
+    }
+    
+    func hideViewAnimated(completion: (() -> Void)?) {
+        UIView.animate(withDuration: 0.3) { [weak self] in
+            self?.settingsViewBottomConstraint.constant = -SETTINGS_VIEW_HEIGHT
+            self?.view.layoutIfNeeded()
+        }
+        UIView.animate(withDuration: 0.6) { [weak self] in
+            self?.backgroundColoredView.alpha = 0.0;
+            self?.view.layoutIfNeeded()
+        } completion: { _ in
+            completion?()
+        }
+    }
+    
+    func dismissFromParent() {
+        self.view.removeFromSuperview()
+        self.removeFromParent()
     }
     
 }
@@ -43,27 +79,27 @@ class RequestCarViewController: UIViewController {
 //MARK: - UICollectionViewDelegate
 extension RequestCarViewController: UICollectionViewDelegate {
     
-}
-
-//MARK: - UICollectionViewDataSource
-extension RequestCarViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = UICollectionViewCell()
-        cell.backgroundColor = .red
-        
-        return cell
-    }
     
     
 }
 
-//MARK: - iRequestCarView
-extension RequestCarViewController: iRequestCarView {
+
+//MARK: - Actions
+extension RequestCarViewController {
+    
+    @IBAction func backgroundColoredViewTapAction(_ sender: Any) {
+        if let delegate = delegate { delegate.backgroundColoredViewDidTap() }
+    }
+    
+}
+
+//MARK: - Helpers
+extension RequestCarViewController {
+    
+    private func prepareToShowYourselfAnimated() {
+        backgroundColoredView.alpha = 0.0
+        settingsViewBottomConstraint.constant = -SETTINGS_VIEW_HEIGHT
+        settingsViewHeightConstraint.constant = SETTINGS_VIEW_HEIGHT
+    }
     
 }

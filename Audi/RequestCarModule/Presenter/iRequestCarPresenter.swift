@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
-protocol iRequestCarPresenter {
-    
+protocol iRequestCarPresenter: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func setCollectionViews(_ collectionViews: [UICollectionView])
 }
+

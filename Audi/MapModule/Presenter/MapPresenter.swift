@@ -138,6 +138,7 @@ extension MapPresenter: iMapViewDelegate {
         setupSearchFooterView()
         setupConstraintView()
         extractAddressFromDefaults()
+        if let originAddress = originAddress { showAddress(originAddress) }
         didSetAddress()
         getCurrentAddress()
     }

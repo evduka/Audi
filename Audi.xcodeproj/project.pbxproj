@@ -16,6 +16,10 @@
 		A206ADDD262F504E00CD495B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADDC262F504E00CD495B /* Place.swift */; };
 		A206ADED2630560000CD495B /* iSearchFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADEC2630560000CD495B /* iSearchFooterView.swift */; };
 		A206ADF52630561C00CD495B /* SearchFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A206ADF42630561C00CD495B /* SearchFooterView.swift */; };
+		A232C63F2638BADA00D16D38 /* PriceCollectionViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232C63E2638BADA00D16D38 /* PriceCollectionViewService.swift */; };
+		A232C6442638BB3D00D16D38 /* iPriceCollectionViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232C6432638BB3D00D16D38 /* iPriceCollectionViewService.swift */; };
+		A232C64A2638BB9100D16D38 /* PaymentCollectionViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232C6492638BB9100D16D38 /* PaymentCollectionViewService.swift */; };
+		A232C6522638BBB300D16D38 /* iPaymentCollectionViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A232C6512638BBB300D16D38 /* iPaymentCollectionViewService.swift */; };
 		A24D381826305B5A004A7E7A /* iSearchFooterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24D381726305B5A004A7E7A /* iSearchFooterPresenter.swift */; };
 		A24D381E26305B91004A7E7A /* SearchFooterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24D381D26305B91004A7E7A /* SearchFooterPresenter.swift */; };
 		A271BE992621BF8900F680EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271BE982621BF8900F680EA /* AppDelegate.swift */; };
@@ -105,6 +109,10 @@
 		A206ADDC262F504E00CD495B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		A206ADEC2630560000CD495B /* iSearchFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchFooterView.swift; sourceTree = "<group>"; };
 		A206ADF42630561C00CD495B /* SearchFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterView.swift; sourceTree = "<group>"; };
+		A232C63E2638BADA00D16D38 /* PriceCollectionViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCollectionViewService.swift; sourceTree = "<group>"; };
+		A232C6432638BB3D00D16D38 /* iPriceCollectionViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPriceCollectionViewService.swift; sourceTree = "<group>"; };
+		A232C6492638BB9100D16D38 /* PaymentCollectionViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCollectionViewService.swift; sourceTree = "<group>"; };
+		A232C6512638BBB300D16D38 /* iPaymentCollectionViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPaymentCollectionViewService.swift; sourceTree = "<group>"; };
 		A24D381726305B5A004A7E7A /* iSearchFooterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSearchFooterPresenter.swift; sourceTree = "<group>"; };
 		A24D381D26305B91004A7E7A /* SearchFooterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooterPresenter.swift; sourceTree = "<group>"; };
 		A271BE952621BF8900F680EA /* Audi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -277,6 +285,33 @@
 				A206ADF42630561C00CD495B /* SearchFooterView.swift */,
 			);
 			path = SearchFooter;
+			sourceTree = "<group>";
+		};
+		A232C6482638BB5000D16D38 /* PriceCollectionViewService */ = {
+			isa = PBXGroup;
+			children = (
+				A232C6432638BB3D00D16D38 /* iPriceCollectionViewService.swift */,
+				A232C63E2638BADA00D16D38 /* PriceCollectionViewService.swift */,
+			);
+			path = PriceCollectionViewService;
+			sourceTree = "<group>";
+		};
+		A232C6562638BBBC00D16D38 /* PaymentCollectionViewService */ = {
+			isa = PBXGroup;
+			children = (
+				A232C6512638BBB300D16D38 /* iPaymentCollectionViewService.swift */,
+				A232C6492638BB9100D16D38 /* PaymentCollectionViewService.swift */,
+			);
+			path = PaymentCollectionViewService;
+			sourceTree = "<group>";
+		};
+		A232C6572638BBCF00D16D38 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A232C6482638BB5000D16D38 /* PriceCollectionViewService */,
+				A232C6562638BBBC00D16D38 /* PaymentCollectionViewService */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		A24D381026305AFE004A7E7A /* SearchHeader */ = {
@@ -614,6 +649,7 @@
 		A2802A2D2635BA1600DB01F9 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A232C6572638BBCF00D16D38 /* Services */,
 				A2802A232635B9A000DB01F9 /* iRequestCarInteractor.swift */,
 				A2802A282635BA0E00DB01F9 /* RequestCarInteractor.swift */,
 			);
@@ -860,6 +896,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A271C05F262E078A00F680EA /* SearchHeaderPresenter.swift in Sources */,
+				A232C63F2638BADA00D16D38 /* PriceCollectionViewService.swift in Sources */,
 				A271BF2B2624329200F680EA /* MapInteractor.swift in Sources */,
 				A206ADB9262F404900CD495B /* SearchInteractor.swift in Sources */,
 				A27FF3E8263459EE0052C921 /* ConstraintPresenter.swift in Sources */,
@@ -882,6 +919,7 @@
 				A271BFBA2625CA1600F680EA /* Route.swift in Sources */,
 				A271BFD62626E43E00F680EA /* UIColor.swift in Sources */,
 				A271C06F262E07E300F680EA /* SearchHeaderView.swift in Sources */,
+				A232C6442638BB3D00D16D38 /* iPriceCollectionViewService.swift in Sources */,
 				A271BEE32621C10A00F680EA /* iMapView.swift in Sources */,
 				A271C045262C3F3E00F680EA /* Address.swift in Sources */,
 				A27FF3D32630978E0052C921 /* String.swift in Sources */,
@@ -898,6 +936,7 @@
 				A206ADDD262F504E00CD495B /* Place.swift in Sources */,
 				A206ADC1262F407300CD495B /* iSearchInteractor.swift in Sources */,
 				A28029F72635A20700DB01F9 /* iRequestCarView.swift in Sources */,
+				A232C6522638BBB300D16D38 /* iPaymentCollectionViewService.swift in Sources */,
 				A271BED72621C07700F680EA /* MapPresenter.swift in Sources */,
 				A271BF432624339500F680EA /* iMapInteractor.swift in Sources */,
 				A24D381826305B5A004A7E7A /* iSearchFooterPresenter.swift in Sources */,
@@ -910,6 +949,7 @@
 				A271C03D262C349E00F680EA /* Settings.swift in Sources */,
 				A271BECF2621C06500F680EA /* MapViewController.swift in Sources */,
 				A271C067262E07D300F680EA /* iSearchHeaderView.swift in Sources */,
+				A232C64A2638BB9100D16D38 /* PaymentCollectionViewService.swift in Sources */,
 				A271BF642624381B00F680EA /* MapService.swift in Sources */,
 				A271BF8826259F0500F680EA /* iHttpService.swift in Sources */,
 				A2802A1B2635B91500DB01F9 /* RequestCarPresenter.swift in Sources */,
